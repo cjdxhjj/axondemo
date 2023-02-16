@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <property name="LOG_HOME" value="./logs"/>
+    <property name="LOG_NAME" value="demo"/>
+    <appender name="DevLog" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_HOME}/${LOG_NAME}.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_HOME}/${LOG_NAME}.%d{yyyy-MM-dd}.log.gz</fileNamePattern>
+            <MaxHistory>31</MaxHistory>
+        </rollingPolicy>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>%d [%t] %p [demo] %c{0} %m%n</pattern>
+        </encoder>
+    </appender>
+    <appender name="asyncAppender" class="ch.qos.logback.classic.AsyncAppender">
+        <appender-ref ref="DevLog" />
+    </appender>
+    <root level="INFO">
+        <appender-ref ref="asyncAppender" />
+    </root>
+</configuration>

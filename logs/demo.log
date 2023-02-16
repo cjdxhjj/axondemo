@@ -1,0 +1,586 @@
+2023-02-16 11:18:29,063 [main] INFO [demo] AxonDemoApplication Starting AxonDemoApplication using Java 17.0.6 with PID 7672 (D:\demo\build\classes\java\main started by petzold in D:\demo)
+2023-02-16 11:18:29,065 [main] INFO [demo] AxonDemoApplication No active profile set, falling back to 1 default profile: "default"
+2023-02-16 11:18:29,215 [main] WARN [demo] AnnotationTypeMapping Support for convention-based annotation attribute overrides is deprecated and will be removed in Spring Framework 6.1. Please annotate the following attributes in @org.axonframework.spring.stereotype.Aggregate with appropriate @AliasFor declarations: [type]
+2023-02-16 11:18:29,218 [main] WARN [demo] AnnotationTypeMapping Support for convention-based annotation attribute overrides is deprecated and will be removed in Spring Framework 6.1. Please annotate the following attributes in @org.axonframework.commandhandling.CommandHandler with appropriate @AliasFor declarations: [payloadType]
+2023-02-16 11:18:29,220 [main] WARN [demo] AnnotationTypeMapping Support for convention-based annotation attribute overrides is deprecated and will be removed in Spring Framework 6.1. Please annotate the following attributes in @org.axonframework.eventsourcing.EventSourcingHandler with appropriate @AliasFor declarations: [payloadType]
+2023-02-16 11:18:29,220 [main] WARN [demo] AnnotationTypeMapping Support for convention-based annotation attribute overrides is deprecated and will be removed in Spring Framework 6.1. Please annotate the following attributes in @org.axonframework.eventsourcing.EventSourcingHandler with appropriate @AliasFor declarations: [payloadType]
+2023-02-16 11:18:29,224 [main] WARN [demo] AnnotationTypeMapping Support for convention-based annotation attribute overrides is deprecated and will be removed in Spring Framework 6.1. Please annotate the following attributes in @org.axonframework.eventhandling.EventHandler with appropriate @AliasFor declarations: [payloadType]
+2023-02-16 11:18:29,761 [main] INFO [demo] RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-16 11:18:29,951 [main] INFO [demo] RepositoryConfigurationDelegate Finished Spring Data repository scanning in 181 ms. Found 1 JPA repository interfaces.
+2023-02-16 11:18:30,305 [main] WARN [demo] LocalVariableTableParameterNameDiscoverer Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: org.axonframework.spring.eventsourcing.SpringPrototypeAggregateFactory
+2023-02-16 11:18:30,693 [main] INFO [demo] LogHelper HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-16 11:18:30,754 [main] INFO [demo] Version HHH000412: Hibernate ORM core version 6.1.6.Final
+2023-02-16 11:18:30,936 [main] WARN [demo] deprecation HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-02-16 11:18:31,196 [main] INFO [demo] HikariDataSource HikariPool-1 - Starting...
+2023-02-16 11:18:32,072 [main] INFO [demo] HikariPool HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@c4cceb
+2023-02-16 11:18:32,074 [main] INFO [demo] HikariDataSource HikariPool-1 - Start completed.
+2023-02-16 11:18:32,232 [main] INFO [demo] SQL dialect HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-02-16 11:18:34,868 [main] INFO [demo] JtaPlatformInitiator HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-16 11:18:34,881 [main] INFO [demo] LocalContainerEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-16 11:18:35,215 [main] INFO [demo] StdSchedulerFactory Using default implementation for ThreadExecutor
+2023-02-16 11:18:35,218 [main] INFO [demo] SimpleThreadPool Job execution threads will use class loader of thread: main
+2023-02-16 11:18:35,229 [main] INFO [demo] SchedulerSignalerImpl Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2023-02-16 11:18:35,229 [main] INFO [demo] QuartzScheduler Quartz Scheduler v.2.3.2 created.
+2023-02-16 11:18:35,239 [main] INFO [demo] RAMJobStore RAMJobStore initialized.
+2023-02-16 11:18:35,239 [main] INFO [demo] QuartzScheduler Scheduler meta-data: Quartz Scheduler (v2.3.2) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2023-02-16 11:18:35,239 [main] INFO [demo] StdSchedulerFactory Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+2023-02-16 11:18:35,239 [main] INFO [demo] StdSchedulerFactory Quartz scheduler version: 2.3.2
+2023-02-16 11:18:35,241 [main] INFO [demo] QuartzScheduler Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+2023-02-16 11:18:36,403 [main] INFO [demo] NettyWebServer Netty started on port 8080
+2023-02-16 11:18:36,446 [main] INFO [demo] AxonDemoApplication Started AxonDemoApplication in 7.812 seconds (process running for 8.464)
+2023-02-16 11:18:37,306 [EventProcessor[com.example.demo.domain.user.handler]-0] INFO [demo] TrackingEventProcessor Worker assigned to segment Segment[0/0] for processing
+2023-02-16 11:18:37,446 [EventProcessor[com.example.demo.domain.user.handler]-0] INFO [demo] TrackingEventProcessor Using current Thread for last segment worker: TrackingSegmentWorker{processor=com.example.demo.domain.user.handler, segment=Segment[0/0]}
+2023-02-16 11:18:37,672 [EventProcessor[com.example.demo.domain.user.handler]-0] INFO [demo] TrackingEventProcessor Fetched token: null for segment: Segment[0/0]
+2023-02-16 11:18:47,541 [reactor-http-nio-2] WARN [demo] DefaultCommandGateway Command 'com.example.demo.domain.user.command.CreateUserCommand' resulted in java.lang.IllegalArgumentException(Invalid command. It does not identify the target aggregate. Make sure at least one of the fields or methods in the [CreateUserCommand] class contains the @TargetAggregateIdentifier annotation and that it returns a non-null value.)
+2023-02-16 11:22:28,453 [main] INFO [demo] AxonDemoApplication Starting AxonDemoApplication using Java 17.0.6 with PID 14696 (D:\demo\build\classes\java\main started by petzold in D:\demo)
+2023-02-16 11:22:28,456 [main] INFO [demo] AxonDemoApplication No active profile set, falling back to 1 default profile: "default"
+2023-02-16 11:22:28,648 [main] WARN [demo] AnnotationTypeMapping Support for convention-based annotation attribute overrides is deprecated and will be removed in Spring Framework 6.1. Please annotate the following attributes in @org.axonframework.spring.stereotype.Aggregate with appropriate @AliasFor declarations: [type]
+2023-02-16 11:22:28,651 [main] WARN [demo] AnnotationTypeMapping Support for convention-based annotation attribute overrides is deprecated and will be removed in Spring Framework 6.1. Please annotate the following attributes in @org.axonframework.commandhandling.CommandHandler with appropriate @AliasFor declarations: [payloadType]
+2023-02-16 11:22:28,654 [main] WARN [demo] AnnotationTypeMapping Support for convention-based annotation attribute overrides is deprecated and will be removed in Spring Framework 6.1. Please annotate the following attributes in @org.axonframework.eventsourcing.EventSourcingHandler with appropriate @AliasFor declarations: [payloadType]
+2023-02-16 11:22:28,654 [main] WARN [demo] AnnotationTypeMapping Support for convention-based annotation attribute overrides is deprecated and will be removed in Spring Framework 6.1. Please annotate the following attributes in @org.axonframework.eventsourcing.EventSourcingHandler with appropriate @AliasFor declarations: [payloadType]
+2023-02-16 11:22:28,659 [main] WARN [demo] AnnotationTypeMapping Support for convention-based annotation attribute overrides is deprecated and will be removed in Spring Framework 6.1. Please annotate the following attributes in @org.axonframework.eventhandling.EventHandler with appropriate @AliasFor declarations: [payloadType]
+2023-02-16 11:22:29,283 [main] INFO [demo] RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-16 11:22:29,489 [main] INFO [demo] RepositoryConfigurationDelegate Finished Spring Data repository scanning in 194 ms. Found 1 JPA repository interfaces.
+2023-02-16 11:22:29,858 [main] WARN [demo] LocalVariableTableParameterNameDiscoverer Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: org.axonframework.spring.eventsourcing.SpringPrototypeAggregateFactory
+2023-02-16 11:22:30,278 [main] INFO [demo] LogHelper HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-16 11:22:30,336 [main] INFO [demo] Version HHH000412: Hibernate ORM core version 6.1.6.Final
+2023-02-16 11:22:30,540 [main] WARN [demo] deprecation HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-02-16 11:22:30,816 [main] INFO [demo] HikariDataSource HikariPool-1 - Starting...
+2023-02-16 11:22:31,291 [main] INFO [demo] HikariPool HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@c4cceb
+2023-02-16 11:22:31,294 [main] INFO [demo] HikariDataSource HikariPool-1 - Start completed.
+2023-02-16 11:22:31,413 [main] INFO [demo] SQL dialect HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-02-16 11:22:32,738 [main] INFO [demo] JtaPlatformInitiator HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-16 11:22:32,749 [main] INFO [demo] LocalContainerEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-16 11:22:32,984 [main] INFO [demo] StdSchedulerFactory Using default implementation for ThreadExecutor
+2023-02-16 11:22:32,987 [main] INFO [demo] SimpleThreadPool Job execution threads will use class loader of thread: main
+2023-02-16 11:22:32,998 [main] INFO [demo] SchedulerSignalerImpl Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2023-02-16 11:22:32,998 [main] INFO [demo] QuartzScheduler Quartz Scheduler v.2.3.2 created.
+2023-02-16 11:22:32,999 [main] INFO [demo] RAMJobStore RAMJobStore initialized.
+2023-02-16 11:22:32,999 [main] INFO [demo] QuartzScheduler Scheduler meta-data: Quartz Scheduler (v2.3.2) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2023-02-16 11:22:32,999 [main] INFO [demo] StdSchedulerFactory Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+2023-02-16 11:22:32,999 [main] INFO [demo] StdSchedulerFactory Quartz scheduler version: 2.3.2
+2023-02-16 11:22:33,000 [main] INFO [demo] QuartzScheduler Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+2023-02-16 11:22:33,971 [main] INFO [demo] NettyWebServer Netty started on port 8080
+2023-02-16 11:22:34,018 [main] INFO [demo] AxonDemoApplication Started AxonDemoApplication in 6.098 seconds (process running for 6.793)
+2023-02-16 11:22:34,479 [EventProcessor[com.example.demo.domain.user.handler]-0] INFO [demo] TrackingEventProcessor Worker assigned to segment Segment[0/0] for processing
+2023-02-16 11:22:34,555 [EventProcessor[com.example.demo.domain.user.handler]-0] INFO [demo] TrackingEventProcessor Using current Thread for last segment worker: TrackingSegmentWorker{processor=com.example.demo.domain.user.handler, segment=Segment[0/0]}
+2023-02-16 11:22:34,614 [EventProcessor[com.example.demo.domain.user.handler]-0] INFO [demo] TrackingEventProcessor Fetched token: null for segment: Segment[0/0]
+2023-02-16 11:22:50,862 [reactor-http-nio-2] WARN [demo] DefaultCommandGateway Command 'com.example.demo.domain.user.command.CreateUserCommand' resulted in java.lang.IllegalArgumentException(Invalid command. It does not identify the target aggregate. Make sure at least one of the fields or methods in the [CreateUserCommand] class contains the @TargetAggregateIdentifier annotation and that it returns a non-null value.)
+2023-02-16 11:24:46,275 [HikariPool-1 housekeeper] WARN [demo] HikariPool HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m44s857ms785?s800ns).
+2023-02-16 11:24:49,646 [reactor-http-nio-3] WARN [demo] DefaultCommandGateway Command 'com.example.demo.domain.user.command.CreateUserCommand' resulted in java.lang.IllegalArgumentException(Invalid command. It does not identify the target aggregate. Make sure at least one of the fields or methods in the [CreateUserCommand] class contains the @TargetAggregateIdentifier annotation and that it returns a non-null value.)
+2023-02-16 13:23:18,397 [main] INFO [demo] AxonDemoApplication Starting AxonDemoApplication using Java 17.0.6 with PID 29992 (D:\demo\build\classes\java\main started by petzold in D:\demo)
+2023-02-16 13:23:18,399 [main] INFO [demo] AxonDemoApplication No active profile set, falling back to 1 default profile: "default"
+2023-02-16 13:23:18,598 [main] WARN [demo] AnnotationTypeMapping Support for convention-based annotation attribute overrides is deprecated and will be removed in Spring Framework 6.1. Please annotate the following attributes in @org.axonframework.spring.stereotype.Aggregate with appropriate @AliasFor declarations: [type]
+2023-02-16 13:23:18,602 [main] WARN [demo] AnnotationTypeMapping Support for convention-based annotation attribute overrides is deprecated and will be removed in Spring Framework 6.1. Please annotate the following attributes in @org.axonframework.commandhandling.CommandHandler with appropriate @AliasFor declarations: [payloadType]
+2023-02-16 13:23:18,604 [main] WARN [demo] AnnotationTypeMapping Support for convention-based annotation attribute overrides is deprecated and will be removed in Spring Framework 6.1. Please annotate the following attributes in @org.axonframework.eventsourcing.EventSourcingHandler with appropriate @AliasFor declarations: [payloadType]
+2023-02-16 13:23:18,604 [main] WARN [demo] AnnotationTypeMapping Support for convention-based annotation attribute overrides is deprecated and will be removed in Spring Framework 6.1. Please annotate the following attributes in @org.axonframework.eventsourcing.EventSourcingHandler with appropriate @AliasFor declarations: [payloadType]
+2023-02-16 13:23:18,612 [main] WARN [demo] AnnotationTypeMapping Support for convention-based annotation attribute overrides is deprecated and will be removed in Spring Framework 6.1. Please annotate the following attributes in @org.axonframework.eventhandling.EventHandler with appropriate @AliasFor declarations: [payloadType]
+2023-02-16 13:23:19,193 [main] INFO [demo] RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-16 13:23:19,495 [main] INFO [demo] RepositoryConfigurationDelegate Finished Spring Data repository scanning in 289 ms. Found 1 JPA repository interfaces.
+2023-02-16 13:23:19,901 [main] WARN [demo] LocalVariableTableParameterNameDiscoverer Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: org.axonframework.spring.eventsourcing.SpringPrototypeAggregateFactory
+2023-02-16 13:23:20,390 [main] INFO [demo] LogHelper HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-16 13:23:20,666 [main] INFO [demo] Version HHH000412: Hibernate ORM core version 6.1.6.Final
+2023-02-16 13:23:20,992 [main] WARN [demo] deprecation HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-02-16 13:23:21,317 [main] INFO [demo] HikariDataSource HikariPool-1 - Starting...
+2023-02-16 13:23:21,983 [main] INFO [demo] HikariPool HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@11ad095c
+2023-02-16 13:23:21,985 [main] INFO [demo] HikariDataSource HikariPool-1 - Start completed.
+2023-02-16 13:23:22,206 [main] INFO [demo] SQL dialect HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-02-16 13:23:23,782 [main] INFO [demo] JtaPlatformInitiator HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-16 13:23:23,804 [main] INFO [demo] LocalContainerEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-16 13:23:24,000 [main] INFO [demo] StdSchedulerFactory Using default implementation for ThreadExecutor
+2023-02-16 13:23:24,003 [main] INFO [demo] SimpleThreadPool Job execution threads will use class loader of thread: main
+2023-02-16 13:23:24,020 [main] INFO [demo] SchedulerSignalerImpl Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2023-02-16 13:23:24,020 [main] INFO [demo] QuartzScheduler Quartz Scheduler v.2.3.2 created.
+2023-02-16 13:23:24,020 [main] INFO [demo] RAMJobStore RAMJobStore initialized.
+2023-02-16 13:23:24,021 [main] INFO [demo] QuartzScheduler Scheduler meta-data: Quartz Scheduler (v2.3.2) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2023-02-16 13:23:24,021 [main] INFO [demo] StdSchedulerFactory Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+2023-02-16 13:23:24,021 [main] INFO [demo] StdSchedulerFactory Quartz scheduler version: 2.3.2
+2023-02-16 13:23:24,021 [main] INFO [demo] QuartzScheduler Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+2023-02-16 13:23:24,928 [main] INFO [demo] NettyWebServer Netty started on port 8080
+2023-02-16 13:23:24,984 [main] INFO [demo] AxonDemoApplication Started AxonDemoApplication in 7.136 seconds (process running for 8.043)
+2023-02-16 13:23:25,502 [EventProcessor[com.example.demo.domain.user.handler]-0] INFO [demo] TrackingEventProcessor Worker assigned to segment Segment[0/0] for processing
+2023-02-16 13:23:25,545 [EventProcessor[com.example.demo.domain.user.handler]-0] INFO [demo] TrackingEventProcessor Using current Thread for last segment worker: TrackingSegmentWorker{processor=com.example.demo.domain.user.handler, segment=Segment[0/0]}
+2023-02-16 13:23:25,592 [EventProcessor[com.example.demo.domain.user.handler]-0] INFO [demo] TrackingEventProcessor Fetched token: null for segment: Segment[0/0]
+2023-02-16 13:24:09,642 [EventProcessor[com.example.demo.domain.user.handler]-0] INFO [demo] UserEventHandler recv user create event [{"address":"beig","age":18,"id":1,"name":"tome"}]
+2023-02-16 13:36:58,218 [main] INFO [demo] AxonDemoApplication Starting AxonDemoApplication using Java 17.0.6 with PID 27460 (D:\demo\build\classes\java\main started by petzold in D:\demo)
+2023-02-16 13:36:58,219 [main] INFO [demo] AxonDemoApplication No active profile set, falling back to 1 default profile: "default"
+2023-02-16 13:36:58,428 [main] WARN [demo] AnnotationTypeMapping Support for convention-based annotation attribute overrides is deprecated and will be removed in Spring Framework 6.1. Please annotate the following attributes in @org.axonframework.spring.stereotype.Aggregate with appropriate @AliasFor declarations: [type]
+2023-02-16 13:36:58,431 [main] WARN [demo] AnnotationTypeMapping Support for convention-based annotation attribute overrides is deprecated and will be removed in Spring Framework 6.1. Please annotate the following attributes in @org.axonframework.commandhandling.CommandHandler with appropriate @AliasFor declarations: [payloadType]
+2023-02-16 13:36:58,433 [main] WARN [demo] AnnotationTypeMapping Support for convention-based annotation attribute overrides is deprecated and will be removed in Spring Framework 6.1. Please annotate the following attributes in @org.axonframework.eventsourcing.EventSourcingHandler with appropriate @AliasFor declarations: [payloadType]
+2023-02-16 13:36:58,433 [main] WARN [demo] AnnotationTypeMapping Support for convention-based annotation attribute overrides is deprecated and will be removed in Spring Framework 6.1. Please annotate the following attributes in @org.axonframework.eventsourcing.EventSourcingHandler with appropriate @AliasFor declarations: [payloadType]
+2023-02-16 13:36:58,440 [main] WARN [demo] AnnotationTypeMapping Support for convention-based annotation attribute overrides is deprecated and will be removed in Spring Framework 6.1. Please annotate the following attributes in @org.axonframework.eventhandling.EventHandler with appropriate @AliasFor declarations: [payloadType]
+2023-02-16 13:36:59,050 [main] INFO [demo] RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-16 13:36:59,314 [main] INFO [demo] RepositoryConfigurationDelegate Finished Spring Data repository scanning in 252 ms. Found 1 JPA repository interfaces.
+2023-02-16 13:36:59,656 [main] WARN [demo] LocalVariableTableParameterNameDiscoverer Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: org.axonframework.spring.eventsourcing.SpringPrototypeAggregateFactory
+2023-02-16 13:37:00,028 [main] INFO [demo] LogHelper HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-16 13:37:00,083 [main] INFO [demo] Version HHH000412: Hibernate ORM core version 6.1.6.Final
+2023-02-16 13:37:00,285 [main] WARN [demo] deprecation HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-02-16 13:37:00,539 [main] INFO [demo] HikariDataSource HikariPool-1 - Starting...
+2023-02-16 13:37:01,216 [main] INFO [demo] HikariPool HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@11ad095c
+2023-02-16 13:37:01,218 [main] INFO [demo] HikariDataSource HikariPool-1 - Start completed.
+2023-02-16 13:37:01,311 [main] INFO [demo] SQL dialect HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-02-16 13:37:01,588 [main] WARN [demo] incubating HHH90006001: Encountered incubating setting [hibernate.id.db_structure_naming_strategy].  See javadoc on corresponding `org.hibernate.cfg.AvailableSettings` constant for details.
+2023-02-16 13:37:01,601 [main] WARN [demo] incubating HHH90006001: Encountered incubating setting [hibernate.id.db_structure_naming_strategy].  See javadoc on corresponding `org.hibernate.cfg.AvailableSettings` constant for details.
+2023-02-16 13:37:07,713 [main] INFO [demo] JtaPlatformInitiator HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-16 13:37:07,723 [main] INFO [demo] LocalContainerEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-16 13:37:07,907 [main] INFO [demo] StdSchedulerFactory Using default implementation for ThreadExecutor
+2023-02-16 13:37:07,909 [main] INFO [demo] SimpleThreadPool Job execution threads will use class loader of thread: main
+2023-02-16 13:37:07,936 [main] INFO [demo] SchedulerSignalerImpl Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2023-02-16 13:37:07,936 [main] INFO [demo] QuartzScheduler Quartz Scheduler v.2.3.2 created.
+2023-02-16 13:37:07,937 [main] INFO [demo] RAMJobStore RAMJobStore initialized.
+2023-02-16 13:37:07,937 [main] INFO [demo] QuartzScheduler Scheduler meta-data: Quartz Scheduler (v2.3.2) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2023-02-16 13:37:07,937 [main] INFO [demo] StdSchedulerFactory Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+2023-02-16 13:37:07,937 [main] INFO [demo] StdSchedulerFactory Quartz scheduler version: 2.3.2
+2023-02-16 13:37:07,938 [main] INFO [demo] QuartzScheduler Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+2023-02-16 13:37:09,031 [main] INFO [demo] NettyWebServer Netty started on port 8080
+2023-02-16 13:37:09,089 [main] INFO [demo] AxonDemoApplication Started AxonDemoApplication in 11.357 seconds (process running for 12.161)
+2023-02-16 13:37:11,031 [EventProcessor[com.example.demo.domain.user.handler]-0] INFO [demo] TrackingEventProcessor Worker assigned to segment Segment[0/0] for processing
+2023-02-16 13:37:11,179 [EventProcessor[com.example.demo.domain.user.handler]-0] INFO [demo] TrackingEventProcessor Using current Thread for last segment worker: TrackingSegmentWorker{processor=com.example.demo.domain.user.handler, segment=Segment[0/0]}
+2023-02-16 13:37:11,276 [EventProcessor[com.example.demo.domain.user.handler]-0] INFO [demo] TrackingEventProcessor Fetched token: null for segment: Segment[0/0]
+2023-02-16 13:37:16,273 [EventProcessor[com.example.demo.domain.user.handler]-0] INFO [demo] UserEventHandler recv user create event [{"address":"beig","age":18,"id":1,"name":"tome"}]
+2023-02-16 13:37:19,180 [reactor-http-nio-3] WARN [demo] SqlExceptionHelper SQL Error: 1062, SQLState: 23000
+2023-02-16 13:37:19,180 [reactor-http-nio-3] ERROR [demo] SqlExceptionHelper Duplicate entry '0-0' for key 'domain_event_entry.UK8s1f994p4la2ipb13me2xqm1w'
+2023-02-16 13:37:19,211 [reactor-http-nio-3] WARN [demo] DefaultCommandGateway Command 'com.example.demo.domain.user.command.CreateUserCommand' resulted in org.axonframework.modelling.command.AggregateStreamCreationException(Cannot reuse aggregate identifier [0] to create aggregate [UserAggregate] since identifiers need to be unique.)
+2023-02-16 13:38:23,188 [reactor-http-nio-4] WARN [demo] DefaultCommandGateway Command 'com.example.demo.domain.user.command.UpdateUserCommand' resulted in org.axonframework.modelling.command.AggregateNotFoundException(The aggregate was not found in the event store)
+2023-02-16 13:38:23,262 [reactor-http-nio-4] ERROR [demo] AbstractErrorWebExceptionHandler [526104b7-3]  500 Server Error for HTTP PUT "/user"
+org.axonframework.modelling.command.AggregateNotFoundException: The aggregate was not found in the event store
+	at org.axonframework.eventsourcing.EventSourcingRepository.doLoadWithLock(EventSourcingRepository.java:131)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ? Handler com.example.demo.controller.UserController#updateUser(UpdateUserCommand) [DispatcherHandler]
+	*__checkpoint ? HTTP PUT "/user" [ExceptionHandlingWebHandler]
+Original Stack Trace:
+		at org.axonframework.eventsourcing.EventSourcingRepository.doLoadWithLock(EventSourcingRepository.java:131)
+		at org.axonframework.eventsourcing.EventSourcingRepository.doLoadWithLock(EventSourcingRepository.java:55)
+		at org.axonframework.modelling.command.LockingRepository.doLoad(LockingRepository.java:137)
+		at org.axonframework.modelling.command.LockingRepository.doLoad(LockingRepository.java:60)
+		at org.axonframework.modelling.command.AbstractRepository.lambda$null$6(AbstractRepository.java:141)
+		at java.base/java.util.HashMap.computeIfAbsent(HashMap.java:1220)
+		at org.axonframework.modelling.command.AbstractRepository.lambda$load$8(AbstractRepository.java:140)
+		at org.axonframework.tracing.Span.runSupplier(Span.java:134)
+		at org.axonframework.modelling.command.AbstractRepository.load(AbstractRepository.java:137)
+		at org.axonframework.modelling.command.AggregateAnnotationCommandHandler$AggregateCommandHandler.handle(AggregateAnnotationCommandHandler.java:568)
+		at org.axonframework.modelling.command.AggregateAnnotationCommandHandler$AggregateCommandHandler.handle(AggregateAnnotationCommandHandler.java:557)
+		at org.axonframework.messaging.DefaultInterceptorChain.proceed(DefaultInterceptorChain.java:57)
+		at org.axonframework.messaging.interceptors.CorrelationDataInterceptor.handle(CorrelationDataInterceptor.java:67)
+		at org.axonframework.messaging.DefaultInterceptorChain.proceed(DefaultInterceptorChain.java:55)
+		at org.axonframework.messaging.unitofwork.DefaultUnitOfWork.executeWithResult(DefaultUnitOfWork.java:77)
+		at org.axonframework.commandhandling.SimpleCommandBus.lambda$handle$3(SimpleCommandBus.java:198)
+		at org.axonframework.tracing.Span.run(Span.java:72)
+		at org.axonframework.commandhandling.SimpleCommandBus.handle(SimpleCommandBus.java:189)
+		at org.axonframework.commandhandling.SimpleCommandBus.doDispatch(SimpleCommandBus.java:163)
+		at org.axonframework.commandhandling.SimpleCommandBus.dispatch(SimpleCommandBus.java:130)
+		at org.axonframework.commandhandling.gateway.AbstractCommandGateway.send(AbstractCommandGateway.java:76)
+		at org.axonframework.commandhandling.gateway.DefaultCommandGateway.send(DefaultCommandGateway.java:83)
+		at org.axonframework.commandhandling.gateway.DefaultCommandGateway.send(DefaultCommandGateway.java:138)
+		at com.example.demo.controller.UserController.updateUser(UserController.java:27)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+		at org.springframework.web.reactive.result.method.InvocableHandlerMethod.lambda$invoke$0(InvocableHandlerMethod.java:145)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:132)
+		at reactor.core.publisher.MonoZip$ZipCoordinator.signal(MonoZip.java:293)
+		at reactor.core.publisher.MonoZip$ZipInner.onNext(MonoZip.java:474)
+		at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onNext(MonoPeekTerminal.java:180)
+		at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.onNext(FluxDefaultIfEmpty.java:122)
+		at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onNext(FluxSwitchIfEmpty.java:74)
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:158)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onNext(FluxMapFuseable.java:299)
+		at reactor.core.publisher.FluxFilterFuseable$FilterFuseableConditionalSubscriber.onNext(FluxFilterFuseable.java:337)
+		at reactor.core.publisher.Operators$BaseFluxToMonoOperator.completePossiblyEmpty(Operators.java:2071)
+		at reactor.core.publisher.MonoCollect$CollectSubscriber.onComplete(MonoCollect.java:145)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onComplete(FluxPeek.java:260)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+		at reactor.netty.channel.FluxReceive.onInboundComplete(FluxReceive.java:415)
+		at reactor.netty.channel.ChannelOperations.onInboundComplete(ChannelOperations.java:431)
+		at reactor.netty.http.server.HttpServerOperations.onInboundNext(HttpServerOperations.java:623)
+		at reactor.netty.channel.ChannelOperationsHandler.channelRead(ChannelOperationsHandler.java:113)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+		at reactor.netty.http.server.HttpTrafficHandler.channelRead(HttpTrafficHandler.java:269)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+		at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+		at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346)
+		at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318)
+		at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+		at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+		at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+2023-02-16 13:42:04,019 [main] INFO [demo] AxonDemoApplication Starting AxonDemoApplication using Java 17.0.6 with PID 18428 (D:\demo\build\classes\java\main started by petzold in D:\demo)
+2023-02-16 13:42:04,022 [main] INFO [demo] AxonDemoApplication No active profile set, falling back to 1 default profile: "default"
+2023-02-16 13:42:04,204 [main] WARN [demo] AnnotationTypeMapping Support for convention-based annotation attribute overrides is deprecated and will be removed in Spring Framework 6.1. Please annotate the following attributes in @org.axonframework.spring.stereotype.Aggregate with appropriate @AliasFor declarations: [type]
+2023-02-16 13:42:04,209 [main] WARN [demo] AnnotationTypeMapping Support for convention-based annotation attribute overrides is deprecated and will be removed in Spring Framework 6.1. Please annotate the following attributes in @org.axonframework.commandhandling.CommandHandler with appropriate @AliasFor declarations: [payloadType]
+2023-02-16 13:42:04,211 [main] WARN [demo] AnnotationTypeMapping Support for convention-based annotation attribute overrides is deprecated and will be removed in Spring Framework 6.1. Please annotate the following attributes in @org.axonframework.eventsourcing.EventSourcingHandler with appropriate @AliasFor declarations: [payloadType]
+2023-02-16 13:42:04,211 [main] WARN [demo] AnnotationTypeMapping Support for convention-based annotation attribute overrides is deprecated and will be removed in Spring Framework 6.1. Please annotate the following attributes in @org.axonframework.eventsourcing.EventSourcingHandler with appropriate @AliasFor declarations: [payloadType]
+2023-02-16 13:42:04,221 [main] WARN [demo] AnnotationTypeMapping Support for convention-based annotation attribute overrides is deprecated and will be removed in Spring Framework 6.1. Please annotate the following attributes in @org.axonframework.eventhandling.EventHandler with appropriate @AliasFor declarations: [payloadType]
+2023-02-16 13:42:04,809 [main] INFO [demo] RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-16 13:42:05,031 [main] INFO [demo] RepositoryConfigurationDelegate Finished Spring Data repository scanning in 210 ms. Found 1 JPA repository interfaces.
+2023-02-16 13:42:05,398 [main] WARN [demo] LocalVariableTableParameterNameDiscoverer Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: org.axonframework.spring.eventsourcing.SpringPrototypeAggregateFactory
+2023-02-16 13:42:05,801 [main] INFO [demo] LogHelper HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-16 13:42:05,857 [main] INFO [demo] Version HHH000412: Hibernate ORM core version 6.1.6.Final
+2023-02-16 13:42:06,047 [main] WARN [demo] deprecation HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-02-16 13:42:06,321 [main] INFO [demo] HikariDataSource HikariPool-1 - Starting...
+2023-02-16 13:42:06,751 [main] INFO [demo] HikariPool HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7d537616
+2023-02-16 13:42:06,755 [main] INFO [demo] HikariDataSource HikariPool-1 - Start completed.
+2023-02-16 13:42:06,829 [main] INFO [demo] SQL dialect HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-02-16 13:42:07,118 [main] WARN [demo] incubating HHH90006001: Encountered incubating setting [hibernate.id.db_structure_naming_strategy].  See javadoc on corresponding `org.hibernate.cfg.AvailableSettings` constant for details.
+2023-02-16 13:42:07,126 [main] WARN [demo] incubating HHH90006001: Encountered incubating setting [hibernate.id.db_structure_naming_strategy].  See javadoc on corresponding `org.hibernate.cfg.AvailableSettings` constant for details.
+2023-02-16 13:42:08,277 [main] INFO [demo] JtaPlatformInitiator HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-16 13:42:08,292 [main] INFO [demo] LocalContainerEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-16 13:42:08,495 [main] INFO [demo] StdSchedulerFactory Using default implementation for ThreadExecutor
+2023-02-16 13:42:08,497 [main] INFO [demo] SimpleThreadPool Job execution threads will use class loader of thread: main
+2023-02-16 13:42:08,506 [main] INFO [demo] SchedulerSignalerImpl Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2023-02-16 13:42:08,506 [main] INFO [demo] QuartzScheduler Quartz Scheduler v.2.3.2 created.
+2023-02-16 13:42:08,507 [main] INFO [demo] RAMJobStore RAMJobStore initialized.
+2023-02-16 13:42:08,507 [main] INFO [demo] QuartzScheduler Scheduler meta-data: Quartz Scheduler (v2.3.2) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2023-02-16 13:42:08,507 [main] INFO [demo] StdSchedulerFactory Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+2023-02-16 13:42:08,507 [main] INFO [demo] StdSchedulerFactory Quartz scheduler version: 2.3.2
+2023-02-16 13:42:08,508 [main] INFO [demo] QuartzScheduler Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+2023-02-16 13:42:09,327 [main] INFO [demo] NettyWebServer Netty started on port 8080
+2023-02-16 13:42:09,373 [main] INFO [demo] AxonDemoApplication Started AxonDemoApplication in 5.797 seconds (process running for 6.725)
+2023-02-16 13:42:09,890 [EventProcessor[com.example.demo.domain.user.handler]-0] INFO [demo] TrackingEventProcessor Worker assigned to segment Segment[0/0] for processing
+2023-02-16 13:42:09,929 [EventProcessor[com.example.demo.domain.user.handler]-0] INFO [demo] TrackingEventProcessor Using current Thread for last segment worker: TrackingSegmentWorker{processor=com.example.demo.domain.user.handler, segment=Segment[0/0]}
+2023-02-16 13:42:10,013 [EventProcessor[com.example.demo.domain.user.handler]-0] INFO [demo] TrackingEventProcessor Fetched token: GapAwareTrackingToken{index=1, gaps=[]} for segment: Segment[0/0]
+2023-02-16 13:44:51,797 [main] INFO [demo] AxonDemoApplication Starting AxonDemoApplication using Java 17.0.6 with PID 25204 (D:\demo\build\classes\java\main started by petzold in D:\demo)
+2023-02-16 13:44:51,799 [main] INFO [demo] AxonDemoApplication No active profile set, falling back to 1 default profile: "default"
+2023-02-16 13:44:51,961 [main] WARN [demo] AnnotationTypeMapping Support for convention-based annotation attribute overrides is deprecated and will be removed in Spring Framework 6.1. Please annotate the following attributes in @org.axonframework.spring.stereotype.Aggregate with appropriate @AliasFor declarations: [type]
+2023-02-16 13:44:51,965 [main] WARN [demo] AnnotationTypeMapping Support for convention-based annotation attribute overrides is deprecated and will be removed in Spring Framework 6.1. Please annotate the following attributes in @org.axonframework.commandhandling.CommandHandler with appropriate @AliasFor declarations: [payloadType]
+2023-02-16 13:44:51,967 [main] WARN [demo] AnnotationTypeMapping Support for convention-based annotation attribute overrides is deprecated and will be removed in Spring Framework 6.1. Please annotate the following attributes in @org.axonframework.eventsourcing.EventSourcingHandler with appropriate @AliasFor declarations: [payloadType]
+2023-02-16 13:44:51,967 [main] WARN [demo] AnnotationTypeMapping Support for convention-based annotation attribute overrides is deprecated and will be removed in Spring Framework 6.1. Please annotate the following attributes in @org.axonframework.eventsourcing.EventSourcingHandler with appropriate @AliasFor declarations: [payloadType]
+2023-02-16 13:44:51,973 [main] WARN [demo] AnnotationTypeMapping Support for convention-based annotation attribute overrides is deprecated and will be removed in Spring Framework 6.1. Please annotate the following attributes in @org.axonframework.eventhandling.EventHandler with appropriate @AliasFor declarations: [payloadType]
+2023-02-16 13:44:52,508 [main] INFO [demo] RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-16 13:44:52,730 [main] INFO [demo] RepositoryConfigurationDelegate Finished Spring Data repository scanning in 210 ms. Found 1 JPA repository interfaces.
+2023-02-16 13:44:53,117 [main] WARN [demo] LocalVariableTableParameterNameDiscoverer Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: org.axonframework.spring.eventsourcing.SpringPrototypeAggregateFactory
+2023-02-16 13:44:53,534 [main] INFO [demo] LogHelper HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-16 13:44:53,601 [main] INFO [demo] Version HHH000412: Hibernate ORM core version 6.1.6.Final
+2023-02-16 13:44:53,801 [main] WARN [demo] deprecation HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-02-16 13:44:54,076 [main] INFO [demo] HikariDataSource HikariPool-1 - Starting...
+2023-02-16 13:44:55,039 [main] INFO [demo] HikariPool HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@c4cceb
+2023-02-16 13:44:55,041 [main] INFO [demo] HikariDataSource HikariPool-1 - Start completed.
+2023-02-16 13:44:55,182 [main] INFO [demo] SQL dialect HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-02-16 13:44:55,480 [main] WARN [demo] incubating HHH90006001: Encountered incubating setting [hibernate.id.db_structure_naming_strategy].  See javadoc on corresponding `org.hibernate.cfg.AvailableSettings` constant for details.
+2023-02-16 13:44:55,490 [main] WARN [demo] incubating HHH90006001: Encountered incubating setting [hibernate.id.db_structure_naming_strategy].  See javadoc on corresponding `org.hibernate.cfg.AvailableSettings` constant for details.
+2023-02-16 13:45:00,735 [main] INFO [demo] JtaPlatformInitiator HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-16 13:45:00,746 [main] INFO [demo] LocalContainerEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-16 13:45:00,946 [main] INFO [demo] StdSchedulerFactory Using default implementation for ThreadExecutor
+2023-02-16 13:45:00,948 [main] INFO [demo] SimpleThreadPool Job execution threads will use class loader of thread: main
+2023-02-16 13:45:00,957 [main] INFO [demo] SchedulerSignalerImpl Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2023-02-16 13:45:00,957 [main] INFO [demo] QuartzScheduler Quartz Scheduler v.2.3.2 created.
+2023-02-16 13:45:00,958 [main] INFO [demo] RAMJobStore RAMJobStore initialized.
+2023-02-16 13:45:00,958 [main] INFO [demo] QuartzScheduler Scheduler meta-data: Quartz Scheduler (v2.3.2) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2023-02-16 13:45:00,958 [main] INFO [demo] StdSchedulerFactory Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+2023-02-16 13:45:00,958 [main] INFO [demo] StdSchedulerFactory Quartz scheduler version: 2.3.2
+2023-02-16 13:45:00,959 [main] INFO [demo] QuartzScheduler Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+2023-02-16 13:45:01,861 [main] INFO [demo] NettyWebServer Netty started on port 8080
+2023-02-16 13:45:01,906 [main] INFO [demo] AxonDemoApplication Started AxonDemoApplication in 10.555 seconds (process running for 11.198)
+2023-02-16 13:45:03,231 [EventProcessor[com.example.demo.domain.user.handler]-0] INFO [demo] TrackingEventProcessor Worker assigned to segment Segment[0/0] for processing
+2023-02-16 13:45:03,401 [EventProcessor[com.example.demo.domain.user.handler]-0] INFO [demo] TrackingEventProcessor Using current Thread for last segment worker: TrackingSegmentWorker{processor=com.example.demo.domain.user.handler, segment=Segment[0/0]}
+2023-02-16 13:45:03,641 [EventProcessor[com.example.demo.domain.user.handler]-0] INFO [demo] TrackingEventProcessor Fetched token: null for segment: Segment[0/0]
+2023-02-16 13:45:41,311 [EventProcessor[com.example.demo.domain.user.handler]-0] INFO [demo] UserEventHandler recv user create event [{"address":"beig","age":18,"id":1,"name":"tome"}]
+2023-02-16 13:47:05,947 [reactor-http-nio-3] WARN [demo] DefaultCommandGateway Command 'com.example.demo.domain.user.command.UpdateUserCommand' resulted in org.springframework.beans.factory.UnsatisfiedDependencyException(Error creating bean with name 'userAggregate' defined in file [D:\demo\build\classes\java\main\com\example\demo\domain\user\aggregate\UserAggregate.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.example.demo.domain.user.command.CreateUserCommand' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {})
+2023-02-16 13:47:05,974 [reactor-http-nio-3] ERROR [demo] AbstractErrorWebExceptionHandler [090c5752-2]  500 Server Error for HTTP PUT "/user"
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userAggregate' defined in file [D:\demo\build\classes\java\main\com\example\demo\domain\user\aggregate\UserAggregate.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.example.demo.domain.user.command.CreateUserCommand' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:798)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ? Handler com.example.demo.controller.UserController#updateUser(UpdateUserCommand) [DispatcherHandler]
+	*__checkpoint ? HTTP PUT "/user" [ExceptionHandlingWebHandler]
+Original Stack Trace:
+		at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:798)
+		at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:245)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1344)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1188)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:561)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:344)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+		at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1130)
+		at org.axonframework.spring.eventsourcing.SpringPrototypeAggregateFactory$1.doCreateAggregate(SpringPrototypeAggregateFactory.java:152)
+		at org.axonframework.eventsourcing.AbstractAggregateFactory.lambda$createAggregateRoot$0(AbstractAggregateFactory.java:91)
+		at java.base/java.util.Optional.orElseGet(Optional.java:364)
+		at org.axonframework.eventsourcing.AbstractAggregateFactory.createAggregateRoot(AbstractAggregateFactory.java:91)
+		at org.axonframework.spring.eventsourcing.SpringPrototypeAggregateFactory.createAggregateRoot(SpringPrototypeAggregateFactory.java:103)
+		at org.axonframework.eventsourcing.EventSourcingRepository.doLoadAggregate(EventSourcingRepository.java:149)
+		at org.axonframework.eventsourcing.EventSourcingRepository.lambda$doLoadWithLock$1(EventSourcingRepository.java:136)
+		at org.axonframework.tracing.Span.runSupplier(Span.java:134)
+		at org.axonframework.eventsourcing.EventSourcingRepository.doLoadWithLock(EventSourcingRepository.java:136)
+		at org.axonframework.eventsourcing.EventSourcingRepository.doLoadWithLock(EventSourcingRepository.java:55)
+		at org.axonframework.modelling.command.LockingRepository.doLoad(LockingRepository.java:137)
+		at org.axonframework.modelling.command.LockingRepository.doLoad(LockingRepository.java:60)
+		at org.axonframework.modelling.command.AbstractRepository.lambda$null$6(AbstractRepository.java:141)
+		at java.base/java.util.HashMap.computeIfAbsent(HashMap.java:1220)
+		at org.axonframework.modelling.command.AbstractRepository.lambda$load$8(AbstractRepository.java:140)
+		at org.axonframework.tracing.Span.runSupplier(Span.java:134)
+		at org.axonframework.modelling.command.AbstractRepository.load(AbstractRepository.java:137)
+		at org.axonframework.modelling.command.AggregateAnnotationCommandHandler$AggregateCommandHandler.handle(AggregateAnnotationCommandHandler.java:568)
+		at org.axonframework.modelling.command.AggregateAnnotationCommandHandler$AggregateCommandHandler.handle(AggregateAnnotationCommandHandler.java:557)
+		at org.axonframework.messaging.DefaultInterceptorChain.proceed(DefaultInterceptorChain.java:57)
+		at org.axonframework.messaging.interceptors.CorrelationDataInterceptor.handle(CorrelationDataInterceptor.java:67)
+		at org.axonframework.messaging.DefaultInterceptorChain.proceed(DefaultInterceptorChain.java:55)
+		at org.axonframework.messaging.unitofwork.DefaultUnitOfWork.executeWithResult(DefaultUnitOfWork.java:77)
+		at org.axonframework.commandhandling.SimpleCommandBus.lambda$handle$3(SimpleCommandBus.java:198)
+		at org.axonframework.tracing.Span.run(Span.java:72)
+		at org.axonframework.commandhandling.SimpleCommandBus.handle(SimpleCommandBus.java:189)
+		at org.axonframework.commandhandling.SimpleCommandBus.doDispatch(SimpleCommandBus.java:163)
+		at org.axonframework.commandhandling.SimpleCommandBus.dispatch(SimpleCommandBus.java:130)
+		at org.axonframework.commandhandling.gateway.AbstractCommandGateway.send(AbstractCommandGateway.java:76)
+		at org.axonframework.commandhandling.gateway.DefaultCommandGateway.send(DefaultCommandGateway.java:83)
+		at org.axonframework.commandhandling.gateway.DefaultCommandGateway.send(DefaultCommandGateway.java:138)
+		at com.example.demo.controller.UserController.updateUser(UserController.java:27)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+		at org.springframework.web.reactive.result.method.InvocableHandlerMethod.lambda$invoke$0(InvocableHandlerMethod.java:145)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:132)
+		at reactor.core.publisher.MonoZip$ZipCoordinator.signal(MonoZip.java:293)
+		at reactor.core.publisher.MonoZip$ZipInner.onNext(MonoZip.java:474)
+		at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onNext(MonoPeekTerminal.java:180)
+		at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.onNext(FluxDefaultIfEmpty.java:122)
+		at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onNext(FluxSwitchIfEmpty.java:74)
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:158)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onNext(FluxMapFuseable.java:299)
+		at reactor.core.publisher.FluxFilterFuseable$FilterFuseableConditionalSubscriber.onNext(FluxFilterFuseable.java:337)
+		at reactor.core.publisher.Operators$BaseFluxToMonoOperator.completePossiblyEmpty(Operators.java:2071)
+		at reactor.core.publisher.MonoCollect$CollectSubscriber.onComplete(MonoCollect.java:145)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onComplete(FluxPeek.java:260)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+		at reactor.netty.channel.FluxReceive.onInboundComplete(FluxReceive.java:415)
+		at reactor.netty.channel.ChannelOperations.onInboundComplete(ChannelOperations.java:431)
+		at reactor.netty.http.server.HttpServerOperations.onInboundNext(HttpServerOperations.java:623)
+		at reactor.netty.channel.ChannelOperationsHandler.channelRead(ChannelOperationsHandler.java:113)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+		at reactor.netty.http.server.HttpTrafficHandler.channelRead(HttpTrafficHandler.java:269)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+		at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+		at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346)
+		at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318)
+		at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+		at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+		at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.example.demo.domain.user.command.CreateUserCommand' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1812)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1371)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1325)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:885)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:789)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:245)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1344)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1188)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:561)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:344)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1130)
+	at org.axonframework.spring.eventsourcing.SpringPrototypeAggregateFactory$1.doCreateAggregate(SpringPrototypeAggregateFactory.java:152)
+	at org.axonframework.eventsourcing.AbstractAggregateFactory.lambda$createAggregateRoot$0(AbstractAggregateFactory.java:91)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.axonframework.eventsourcing.AbstractAggregateFactory.createAggregateRoot(AbstractAggregateFactory.java:91)
+	at org.axonframework.spring.eventsourcing.SpringPrototypeAggregateFactory.createAggregateRoot(SpringPrototypeAggregateFactory.java:103)
+	at org.axonframework.eventsourcing.EventSourcingRepository.doLoadAggregate(EventSourcingRepository.java:149)
+	at org.axonframework.eventsourcing.EventSourcingRepository.lambda$doLoadWithLock$1(EventSourcingRepository.java:136)
+	at org.axonframework.tracing.Span.runSupplier(Span.java:134)
+	at org.axonframework.eventsourcing.EventSourcingRepository.doLoadWithLock(EventSourcingRepository.java:136)
+	at org.axonframework.eventsourcing.EventSourcingRepository.doLoadWithLock(EventSourcingRepository.java:55)
+	at org.axonframework.modelling.command.LockingRepository.doLoad(LockingRepository.java:137)
+	at org.axonframework.modelling.command.LockingRepository.doLoad(LockingRepository.java:60)
+	at org.axonframework.modelling.command.AbstractRepository.lambda$null$6(AbstractRepository.java:141)
+	at java.base/java.util.HashMap.computeIfAbsent(HashMap.java:1220)
+	at org.axonframework.modelling.command.AbstractRepository.lambda$load$8(AbstractRepository.java:140)
+	at org.axonframework.tracing.Span.runSupplier(Span.java:134)
+	at org.axonframework.modelling.command.AbstractRepository.load(AbstractRepository.java:137)
+	at org.axonframework.modelling.command.AggregateAnnotationCommandHandler$AggregateCommandHandler.handle(AggregateAnnotationCommandHandler.java:568)
+	at org.axonframework.modelling.command.AggregateAnnotationCommandHandler$AggregateCommandHandler.handle(AggregateAnnotationCommandHandler.java:557)
+	at org.axonframework.messaging.DefaultInterceptorChain.proceed(DefaultInterceptorChain.java:57)
+	at org.axonframework.messaging.interceptors.CorrelationDataInterceptor.handle(CorrelationDataInterceptor.java:67)
+	at org.axonframework.messaging.DefaultInterceptorChain.proceed(DefaultInterceptorChain.java:55)
+	at org.axonframework.messaging.unitofwork.DefaultUnitOfWork.executeWithResult(DefaultUnitOfWork.java:77)
+	at org.axonframework.commandhandling.SimpleCommandBus.lambda$handle$3(SimpleCommandBus.java:198)
+	at org.axonframework.tracing.Span.run(Span.java:72)
+	at org.axonframework.commandhandling.SimpleCommandBus.handle(SimpleCommandBus.java:189)
+	at org.axonframework.commandhandling.SimpleCommandBus.doDispatch(SimpleCommandBus.java:163)
+	at org.axonframework.commandhandling.SimpleCommandBus.dispatch(SimpleCommandBus.java:130)
+	at org.axonframework.commandhandling.gateway.AbstractCommandGateway.send(AbstractCommandGateway.java:76)
+	at org.axonframework.commandhandling.gateway.DefaultCommandGateway.send(DefaultCommandGateway.java:83)
+	at org.axonframework.commandhandling.gateway.DefaultCommandGateway.send(DefaultCommandGateway.java:138)
+	at com.example.demo.controller.UserController.updateUser(UserController.java:27)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.reactive.result.method.InvocableHandlerMethod.lambda$invoke$0(InvocableHandlerMethod.java:145)
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:132)
+	at reactor.core.publisher.MonoZip$ZipCoordinator.signal(MonoZip.java:293)
+	at reactor.core.publisher.MonoZip$ZipInner.onNext(MonoZip.java:474)
+	at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onNext(MonoPeekTerminal.java:180)
+	at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.onNext(FluxDefaultIfEmpty.java:122)
+	at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onNext(FluxSwitchIfEmpty.java:74)
+	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:158)
+	at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onNext(FluxMapFuseable.java:299)
+	at reactor.core.publisher.FluxFilterFuseable$FilterFuseableConditionalSubscriber.onNext(FluxFilterFuseable.java:337)
+	at reactor.core.publisher.Operators$BaseFluxToMonoOperator.completePossiblyEmpty(Operators.java:2071)
+	at reactor.core.publisher.MonoCollect$CollectSubscriber.onComplete(MonoCollect.java:145)
+	at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+	at reactor.core.publisher.FluxPeek$PeekSubscriber.onComplete(FluxPeek.java:260)
+	at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+	at reactor.netty.channel.FluxReceive.onInboundComplete(FluxReceive.java:415)
+	at reactor.netty.channel.ChannelOperations.onInboundComplete(ChannelOperations.java:431)
+	at reactor.netty.http.server.HttpServerOperations.onInboundNext(HttpServerOperations.java:623)
+	at reactor.netty.channel.ChannelOperationsHandler.channelRead(ChannelOperationsHandler.java:113)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at reactor.netty.http.server.HttpTrafficHandler.channelRead(HttpTrafficHandler.java:269)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318)
+	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-02-16 13:51:30,646 [main] INFO [demo] AxonDemoApplication Starting AxonDemoApplication using Java 17.0.6 with PID 28900 (D:\demo\build\classes\java\main started by petzold in D:\demo)
+2023-02-16 13:51:30,648 [main] INFO [demo] AxonDemoApplication No active profile set, falling back to 1 default profile: "default"
+2023-02-16 13:51:30,848 [main] WARN [demo] AnnotationTypeMapping Support for convention-based annotation attribute overrides is deprecated and will be removed in Spring Framework 6.1. Please annotate the following attributes in @org.axonframework.spring.stereotype.Aggregate with appropriate @AliasFor declarations: [type]
+2023-02-16 13:51:30,851 [main] WARN [demo] AnnotationTypeMapping Support for convention-based annotation attribute overrides is deprecated and will be removed in Spring Framework 6.1. Please annotate the following attributes in @org.axonframework.commandhandling.CommandHandler with appropriate @AliasFor declarations: [payloadType]
+2023-02-16 13:51:30,853 [main] WARN [demo] AnnotationTypeMapping Support for convention-based annotation attribute overrides is deprecated and will be removed in Spring Framework 6.1. Please annotate the following attributes in @org.axonframework.eventsourcing.EventSourcingHandler with appropriate @AliasFor declarations: [payloadType]
+2023-02-16 13:51:30,853 [main] WARN [demo] AnnotationTypeMapping Support for convention-based annotation attribute overrides is deprecated and will be removed in Spring Framework 6.1. Please annotate the following attributes in @org.axonframework.eventsourcing.EventSourcingHandler with appropriate @AliasFor declarations: [payloadType]
+2023-02-16 13:51:30,858 [main] WARN [demo] AnnotationTypeMapping Support for convention-based annotation attribute overrides is deprecated and will be removed in Spring Framework 6.1. Please annotate the following attributes in @org.axonframework.eventhandling.EventHandler with appropriate @AliasFor declarations: [payloadType]
+2023-02-16 13:51:31,381 [main] INFO [demo] RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-16 13:51:31,606 [main] INFO [demo] RepositoryConfigurationDelegate Finished Spring Data repository scanning in 215 ms. Found 1 JPA repository interfaces.
+2023-02-16 13:51:31,989 [main] WARN [demo] LocalVariableTableParameterNameDiscoverer Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: org.axonframework.spring.eventsourcing.SpringPrototypeAggregateFactory
+2023-02-16 13:51:32,404 [main] INFO [demo] LogHelper HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-16 13:51:32,469 [main] INFO [demo] Version HHH000412: Hibernate ORM core version 6.1.6.Final
+2023-02-16 13:51:32,676 [main] WARN [demo] deprecation HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-02-16 13:51:32,989 [main] INFO [demo] HikariDataSource HikariPool-1 - Starting...
+2023-02-16 13:51:33,448 [main] INFO [demo] HikariPool HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@778113f2
+2023-02-16 13:51:33,451 [main] INFO [demo] HikariDataSource HikariPool-1 - Start completed.
+2023-02-16 13:51:33,533 [main] INFO [demo] SQL dialect HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-02-16 13:51:33,863 [main] WARN [demo] incubating HHH90006001: Encountered incubating setting [hibernate.id.db_structure_naming_strategy].  See javadoc on corresponding `org.hibernate.cfg.AvailableSettings` constant for details.
+2023-02-16 13:51:33,873 [main] WARN [demo] incubating HHH90006001: Encountered incubating setting [hibernate.id.db_structure_naming_strategy].  See javadoc on corresponding `org.hibernate.cfg.AvailableSettings` constant for details.
+2023-02-16 13:51:35,004 [main] INFO [demo] JtaPlatformInitiator HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-16 13:51:35,015 [main] INFO [demo] LocalContainerEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-16 13:51:35,244 [main] INFO [demo] StdSchedulerFactory Using default implementation for ThreadExecutor
+2023-02-16 13:51:35,247 [main] INFO [demo] SimpleThreadPool Job execution threads will use class loader of thread: main
+2023-02-16 13:51:35,263 [main] INFO [demo] SchedulerSignalerImpl Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2023-02-16 13:51:35,264 [main] INFO [demo] QuartzScheduler Quartz Scheduler v.2.3.2 created.
+2023-02-16 13:51:35,266 [main] INFO [demo] RAMJobStore RAMJobStore initialized.
+2023-02-16 13:51:35,269 [main] INFO [demo] QuartzScheduler Scheduler meta-data: Quartz Scheduler (v2.3.2) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2023-02-16 13:51:35,269 [main] INFO [demo] StdSchedulerFactory Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+2023-02-16 13:51:35,270 [main] INFO [demo] StdSchedulerFactory Quartz scheduler version: 2.3.2
+2023-02-16 13:51:35,272 [main] INFO [demo] QuartzScheduler Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+2023-02-16 13:51:36,245 [main] INFO [demo] NettyWebServer Netty started on port 8080
+2023-02-16 13:51:36,290 [main] INFO [demo] AxonDemoApplication Started AxonDemoApplication in 6.092 seconds (process running for 6.772)
+2023-02-16 13:51:37,372 [EventProcessor[com.example.demo.domain.user.handler]-0] INFO [demo] TrackingEventProcessor Worker assigned to segment Segment[0/0] for processing
+2023-02-16 13:51:37,522 [EventProcessor[com.example.demo.domain.user.handler]-0] INFO [demo] TrackingEventProcessor Using current Thread for last segment worker: TrackingSegmentWorker{processor=com.example.demo.domain.user.handler, segment=Segment[0/0]}
+2023-02-16 13:51:37,769 [EventProcessor[com.example.demo.domain.user.handler]-0] INFO [demo] TrackingEventProcessor Fetched token: GapAwareTrackingToken{index=1, gaps=[]} for segment: Segment[0/0]
+2023-02-16 13:51:56,149 [reactor-http-nio-2] WARN [demo] AnnotationTypeMapping Support for convention-based annotation attribute overrides is deprecated and will be removed in Spring Framework 6.1. Please annotate the following attributes in @org.axonframework.modelling.command.AggregateIdentifier with appropriate @AliasFor declarations: [routingKey]
+2023-02-16 13:52:22,567 [EventProcessor[com.example.demo.domain.user.handler]-0] INFO [demo] UserEventHandler recv user update event [{"address":"cd","age":18,"id":1,"name":"david"}]
+2023-02-16 13:56:27,999 [EventProcessor[com.example.demo.domain.user.handler]-0] INFO [demo] UserEventHandler recv user update event [{"address":"cd","age":18,"id":1,"name":"adobe"}]
